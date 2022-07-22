@@ -27,6 +27,8 @@ body {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
@@ -54,11 +56,27 @@ button {
     cursor: pointer;
 }
 
+.container {
+    outline: tomato solid;
+    margin: 0 auto;
+    width: 1200px;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}
+
 /* HEADER */
 header {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    border-bottom: #ECECEC 1px;
 }
 
 /* logo */
@@ -102,9 +120,15 @@ nav .link:focus {
 /* Order a service */
 .order {
     background-color: var(--secondary-background-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
 .order-title {
+    margin: 0 auto 30px;
+    width: 696px;
+
     color: var(--primary-white-color);
 
     font-weight: 900;
@@ -116,6 +140,12 @@ nav .link:focus {
 }
 
 .primary-button {
+    padding: 10px 32px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 216px;
+    min-height: 50px;
+
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border: 0px;
@@ -130,7 +160,13 @@ nav .link:focus {
 }
 
 /* Our adventages */
+.adventage {
+    padding: 94px 0;
+}
+
 .adventage-title {
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
     font-size: 14px;
     line-height: 1.14;
@@ -142,7 +178,13 @@ nav .link:focus {
 }
 
 /* What we are doing */
+.work {
+    padding-bottom: 94px;
+}
+
 .section-title {
+    margin-bottom: 50px;
+
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
@@ -152,9 +194,27 @@ nav .link:focus {
 /* Our team */
 .team {
     background-color: var(--secondary-white-color);
+    padding: 94px 0;
+}
+
+.team .list-item {
+    padding-bottom: 30px;
+    width: 270px;
+    text-align: center;
+
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.hero-img {
+    display: block;
+    margin-bottom: 30px;
 }
 
 .hero-title {
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -170,7 +230,12 @@ nav .link:focus {
 /* FOOTER */
 /* address */
 footer {
+    padding: 60px 0px;
     background-color: var(--secondary-background-color);
+}
+.link.logo {
+    display: inline-block;
+    margin-bottom: 20px;
 }
 
 footer .link {
@@ -186,9 +251,24 @@ address .contact {
     opacity: 0.6;
 }
 
+.address-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
 /* PORTFOLIO PAGE */
+.portfolio {
+    padding: 94px 0px;
+}
+
+
 /* buttons */
+.list.button {
+    margin-bottom: 50px;
+}
+
 .secondary-button {
+    border-radius: 4px;
+
     color: var(--title-text-color);
     background-color: var(--secondary-white-color);
     border: 0px;
@@ -204,22 +284,41 @@ address .contact {
 .secondary-button:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .secondary-button.current {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* Cards */
+.card-item {
+    width: 370px;
+    padding-bottom: 20px;
 
-.icon-title {
+    background: var(--primary-white-color);
+    border: 1px solid #EEEEEE;
+}
+
+.card-img {
+    display: block;
+    margin: -1px 0 0 -1px;
+}
+
+.card-title {
+    margin: 20px 24px 4px;
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.icon-desc {
+.card-desc {
+    margin: 0px 24px;
+    max-width: 322px;
+    
     font-size: 16px;
     line-height: 1.88;
 }

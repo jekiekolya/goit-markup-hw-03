@@ -1,0 +1,225 @@
+/* main color for text: #757575; */
+/* main color for text in header: #212121; */
+/* secondary color for text: #FFFFFF; */
+/* color accent: #2196F3 */
+
+/* main background color: #FFFFFF; */
+/* secondary background color: #2F303A */
+/* another background color: #F5F4FA */
+
+/* common selectors */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --secondary-white-color: #F5F4FA;
+    --secondary-background-color: #2F303A;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link.current {
+    color: var(--accent-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* HEADER */
+header {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+/* logo */
+nav .logo {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+/* links for pages */
+nav .link {
+    color: var(--title-text-color);
+}
+
+nav .link:hover,
+nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* Contacts */
+.contact {
+    color: var(--primary-text-color);
+}
+
+.contact:hover,
+.contact:focus {
+    color: var(--accent-color);
+}
+
+/* MAIN */
+/* Order a service */
+.order {
+    background-color: var(--secondary-background-color);
+}
+
+.order-title {
+    color: var(--primary-white-color);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.primary-button {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: 0px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+/* Our adventages */
+.adventage-title {
+    color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.adventage-desc {
+    line-height: 1.71;
+}
+
+/* What we are doing */
+.section-title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+/* Our team */
+.team {
+    background-color: var(--secondary-white-color);
+}
+
+.hero-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.hero-desc {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+
+/* FOOTER */
+/* address */
+footer {
+    background-color: var(--secondary-background-color);
+}
+
+footer .link {
+    color: var(--primary-white-color);
+}
+
+address .link {
+    font-style: normal;
+    line-height: 1.71;
+}
+
+address .contact {
+    opacity: 0.6;
+}
+
+/* PORTFOLIO PAGE */
+/* buttons */
+.secondary-button {
+    color: var(--title-text-color);
+    background-color: var(--secondary-white-color);
+    border: 0px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+.secondary-button.current {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
+
+
+.icon-title {
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.icon-desc {
+    font-size: 16px;
+    line-height: 1.88;
+}

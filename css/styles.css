@@ -101,7 +101,6 @@ nav .logo {
 }
 
 .logo {
-
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.2;
@@ -164,11 +163,13 @@ nav .link:focus {
 }
 
 .order-title {
-    margin: 0 auto 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:30px;
     width: 696px;
+    
 
     color: var(--primary-white-color);
-
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -187,19 +188,17 @@ nav .link:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border: 0px;
-
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
 }
 
 /* Our adventages */
 .adventage {
-    padding: 94px 0;
+    padding-top: 94px;
 }
 
 .adventage-list {
@@ -225,7 +224,8 @@ nav .link:focus {
 }
 
 /* What we are doing */
-.work {
+.section {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -253,7 +253,6 @@ nav .link:focus {
 /* Our team */
 .team {
     background-color: var(--secondary-white-color);
-    padding: 94px 0;
 }
 
 .team-list {
@@ -297,7 +296,8 @@ nav .link:focus {
 /* FOOTER */
 /* address */
 footer {
-    padding: 60px 0px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--secondary-background-color);
 }
 .link.logo {
@@ -323,9 +323,6 @@ address .contact {
 }
 
 /* PORTFOLIO PAGE */
-.portfolio {
-    padding: 94px 0px;
-}
 
 
 /* buttons */

@@ -57,7 +57,6 @@ button {
 }
 
 .container {
-    outline: tomato solid;
     margin: 0 auto;
     width: 1200px;
     padding: 0 15px;
@@ -76,11 +75,23 @@ header {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    border-bottom: #ECECEC 1px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
 /* logo */
 nav .logo {
+    margin-right: 93px;
+
     text-decoration: none;
     color: #000000;
 }
@@ -90,14 +101,27 @@ nav .logo {
 }
 
 .logo {
+
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 }
 
+.site-nav {
+    display: flex;
+}
+
+.site-nav li:not(:last-child) {
+    margin-right: 50px;
+}
+
 /* links for pages */
 nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
 }
 
@@ -107,6 +131,20 @@ nav .link:focus {
 }
 
 /* Contacts */
+.contact-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-list .link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.contact-list li:not(:last-child) {
+    margin-right: 50px;
+}
+
 .contact {
     color: var(--primary-text-color);
 }
@@ -164,6 +202,14 @@ nav .link:focus {
     padding: 94px 0;
 }
 
+.adventage-list {
+    display: flex;
+}
+
+.adventage-list li:not(:last-child) {
+    margin-right: 30px;
+}
+
 .adventage-title {
     margin-bottom: 10px;
 
@@ -174,12 +220,25 @@ nav .link:focus {
 }
 
 .adventage-desc {
+    width: 270px;
     line-height: 1.71;
 }
 
 /* What we are doing */
 .work {
     padding-bottom: 94px;
+}
+
+.work img {
+    display: block;
+}
+
+.work-list {
+    display: flex;
+}
+
+.work-list li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .section-title {
@@ -195,6 +254,14 @@ nav .link:focus {
 .team {
     background-color: var(--secondary-white-color);
     padding: 94px 0;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-list li:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team .list-item {
@@ -263,10 +330,17 @@ address .contact {
 
 /* buttons */
 .list.button {
+    display: flex;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
+.list.button li:not(:last-child) {
+    margin-right: 8px;
+}
+
 .secondary-button {
+    padding: 6px 22px;
     border-radius: 4px;
 
     color: var(--title-text-color);
@@ -294,8 +368,14 @@ address .contact {
 }
 
 /* Cards */
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
 .card-item {
     width: 370px;
+    margin: 15px;
     padding-bottom: 20px;
 
     background: var(--primary-white-color);

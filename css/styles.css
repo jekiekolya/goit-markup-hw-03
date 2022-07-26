@@ -70,6 +70,11 @@ p {
     margin: 0px;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* HEADER */
 header {
     font-weight: 500;
@@ -199,6 +204,7 @@ nav .link:focus {
 /* Our adventages */
 .adventage {
     padding-top: 94px;
+    padding-bottom: 0px;
 }
 
 .adventage-list {
@@ -224,11 +230,6 @@ nav .link:focus {
 }
 
 /* What we are doing */
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .work img {
     display: block;
 }
@@ -264,7 +265,6 @@ nav .link:focus {
 }
 
 .team .list-item {
-    padding-bottom: 30px;
     width: 270px;
     text-align: center;
 
@@ -275,7 +275,11 @@ nav .link:focus {
 
 .hero-img {
     display: block;
-    margin-bottom: 30px;
+}
+
+.team-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .hero-title {
@@ -295,7 +299,7 @@ nav .link:focus {
 
 /* FOOTER */
 /* address */
-footer {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--secondary-background-color);
@@ -373,7 +377,6 @@ address .contact {
 .card-item {
     width: 370px;
     margin: 15px;
-    padding-bottom: 20px;
 
     background: var(--primary-white-color);
     border: 1px solid #EEEEEE;
@@ -384,8 +387,12 @@ address .contact {
     margin: -1px 0 0 -1px;
 }
 
+.card-info {
+    padding: 20px 24px;
+}
+
 .card-title {
-    margin: 20px 24px 4px;
+    margin-bottom: 4px;
     color: var(--title-text-color);
     font-size: 18px;
     line-height: 2;
@@ -393,7 +400,6 @@ address .contact {
 }
 
 .card-desc {
-    margin: 0px 24px;
     max-width: 322px;
     
     font-size: 16px;
